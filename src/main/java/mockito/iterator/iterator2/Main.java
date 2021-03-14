@@ -27,12 +27,12 @@ public class Main {
         Iterator<Book> iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = iterador.next();
-            logger.log(Level.INFO, book.toString());
+            logger.log(Level.INFO, "book: {}",book.toString());
         }
         logger.log(Level.INFO,"============");
 
         for (Book book: books) {
-            logger.log(Level.INFO, book.toString());
+            logger.log(Level.INFO, "book: {}", book.toString());
         }
     }
 }

@@ -21,7 +21,7 @@ public class Main {
         CustomIterator iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = (Book) iterador.next();
-            logger.log(Level.INFO,book.toString());
+            logger.log(Level.INFO,"book: {}",book.toString());
         }
 
 
