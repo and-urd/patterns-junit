@@ -12,4 +12,16 @@ public class Calculator {
         // multiply two doubles
         return num1 * num2;
     }
+
+    public double cuadrado(double num1){
+        return num1*num1;
+    }
+
+    public double suma(double x, double y){
+        return x + y;
+    }
+
+    public double resta(double x, double y){
+        return x - y;
+    }
 }
