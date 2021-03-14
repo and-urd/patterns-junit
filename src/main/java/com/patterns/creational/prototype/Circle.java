@@ -24,6 +24,7 @@ public class Circle extends Shape{
         return Math.PI*radio*radio;
     }
 
+    @Override
     public Circle clone() throws CloneNotSupportedException {
         return (Circle) super.clone();
     }
