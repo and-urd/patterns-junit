@@ -7,9 +7,9 @@ public class Main {
         String carType = "electric";
 
         ICar car;
-        if ("car" == carType) {
+        if (carType.equals("car")) {
             car = new Car();
-        } else if ("electric" == carType) {
+        } else if (carType.equals("electric")) {
             car = new ElectricCar();
         }else{
             throw new RuntimeException("Invalid car");
