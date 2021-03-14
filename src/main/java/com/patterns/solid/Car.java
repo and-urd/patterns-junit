@@ -1,14 +1,18 @@
 package com.patterns.solid;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Car implements ICar{
 
+    Logger logger= Logger.getLogger(Car.class.getName());
     @Override
     public void accelerate() {
-        System.out.println("accelerating the car");
+        logger.log (Level.INFO, "accelerating the car");
     }
 
     @Override
     public void stop() {
-        System.out.println("stopping the car");
+        logger.log(Level.INFO,"stopping the car");
     }
 }

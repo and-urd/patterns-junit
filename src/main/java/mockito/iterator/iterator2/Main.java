@@ -4,10 +4,15 @@ package mockito.iterator.iterator2;
 import mockito.iterator.iterator1.Book;
 
 import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
 
+
+
     public static void main(String[] args) {
+        Logger logger = Logger.getLogger(Main.class.getName());
 
         Book book1 = new Book("5656435", "Hawkins", 2021 );
         Book book2 = new Book("124234fdfg", "Tolle", 1997 );
@@ -22,12 +27,12 @@ public class Main {
         Iterator<Book> iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = iterador.next();
-            System.out.println(book);
+            logger.log(Level.INFO, book.toString());
         }
-        System.out.println("============");
+        logger.log(Level.INFO,"============");
 
         for (Book book: books) {
-            System.out.println(book);
+            logger.log(Level.INFO, book.toString());
         }
     }
 }
