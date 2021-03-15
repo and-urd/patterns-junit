@@ -19,9 +19,9 @@ class BorderThicknessDecoratorTest {
         assertEquals("Border thickness is: 2px", rectanguloDecorado.draw());
     } */
 
-    @Test
+/*    @Test
     void resize() {
-    }
+    }*/
 
     @Test
     void description() {
