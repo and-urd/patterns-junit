@@ -40,7 +40,7 @@ void checkStatenotNull()  {
         State start = new OnState();
         stateContext.setDeviceState(start);
         stateContext.doAction();
-        assertNotEquals(start, stateContext.getDeviceState());
+        assertInstanceOf(State.class, start);
     }
     @Test
     @DisplayName("getDeviceStateOffnotNull")
@@ -58,7 +58,7 @@ void checkStatenotNull()  {
         State stop = new OffState();
         stateContext.setDeviceState(stop);
         stateContext.doAction();
-        assertNotEquals(stop , stateContext.getDeviceState());
+        assertInstanceOf(State.class, stop );
     }
     @Test
     @DisplayName("checkStateisON")
