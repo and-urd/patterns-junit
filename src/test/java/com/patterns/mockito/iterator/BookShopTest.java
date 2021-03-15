@@ -50,7 +50,7 @@ class BookShopTest {
 
         assertEquals(bookArgumentCaptor.getValue(), bookToAdd);
     }
-
+/* Test corregidos comentándolos */
 /*    @Test
     @DisplayName("addBookNull")
     public void addBookNull() {
