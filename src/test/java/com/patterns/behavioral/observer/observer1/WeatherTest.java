@@ -13,7 +13,6 @@ class WeatherTest {
     private WeatherType currentWeather;
     private List<WeatherObserver> observers;
 
-    @Test
     @BeforeEach
     void comienzo(){
         System.out.println("comienzo");
@@ -75,6 +74,7 @@ class WeatherTest {
         WeatherType type = WeatherType.RAINY;
         WeatherObserver computer = new Computer();
         computer.update(type);
+        assertInstanceOf(WeatherObserver.class, computer);
 
 
 
